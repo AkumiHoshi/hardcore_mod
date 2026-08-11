@@ -1,0 +1,21 @@
+{
+  "enchantment.hardcoremod.damage_combo": "Tăng sát thương kèm theo",
+  "enchantment.hardcoremod.element_fire": "Tăng sát thương lửa",
+  "enchantment.hardcoremod.element_ice": "Tăng sát thương băng",
+  "enchantment.hardcoremod.element_quantum": "Tăng sát thương lượng tử",
+  "enchantment.hardcoremod.element_lightning": "Tăng sát thương sét",
+  "enchantment.hardcoremod.element_water": "Tăng sát thương nước",
+  "enchantment.hardcoremod.element_earth": "Tăng sát thương đất",
+  "enchantment.hardcoremod.element_wind": "Tăng sát thương gió",
+  "enchantment.hardcoremod.element_physics": "Tăng sát thương vật lý",
+  "key.hardcoremod.stats": "Mở GUI Points (G)",
+  "key.categories.hardcoremod": "Hardcore Mod",
+  "enchantment.hardcoremod.chance_fire": "Tăng tỉ lệ lửa",
+  "enchantment.hardcoremod.chance_ice": "Tăng tỉ lệ đóng băng",
+  "enchantment.hardcoremod.chance_quantum": "Tăng tỉ lệ lượng tử",
+  "enchantment.hardcoremod.chance_lightning": "Tăng tỉ lệ sét",
+  "enchantment.hardcoremod.chance_water": "Tăng tỉ lệ nước",
+  "enchantment.hardcoremod.chance_earth": "Tăng tỉ lệ đất",
+  "enchantment.hardcoremod.chance_wind": "Tăng tỉ lệ gió",
+  "enchantment.hardcoremod.chance_physics": "Tăng tỉ lệ vật lý"
+}

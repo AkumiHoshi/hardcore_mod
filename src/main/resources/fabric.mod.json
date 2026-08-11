@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "hardcoremod",
+  "version": "${version}",
+  "name": "Hardcore Mod",
+  "description": "Hardcore replay system, stat points, elements, enchantments, damage counter",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.hardcoremod.HardcoreMod"
+    ],
+    "client": [
+      "dev.hardcoremod.client.HcClient"
+    ]
+  },
+  "mixins": [
+    "hardcoremod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

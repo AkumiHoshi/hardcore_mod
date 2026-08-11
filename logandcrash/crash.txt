@@ -1,0 +1,205 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 2026-08-07 20:06:50
+Description: Rendering screen
+
+java.lang.IllegalStateException: Can only blur once per frame
+	at knot//net.minecraft.class_11246.method_71299(class_11246.java:44)
+	at knot//net.minecraft.class_332.method_71278(class_332.java:143)
+	at knot//net.minecraft.class_437.method_57734(class_437.java:390)
+	at knot//net.minecraft.class_437.method_25420(class_437.java:380)
+	at knot//dev.hardcoremod.client.ElementSelectScreen.method_25394(ElementSelectScreen.java:48)
+	at knot//net.minecraft.class_437.method_47413(class_437.java:119)
+	at knot//net.minecraft.class_757.mixinextras$bridge$method_47413$63(class_757.java)
+	at knot//net.minecraft.class_757.wrapOperation$ban000$fabric-screen-api-v1$onRenderScreen(class_757.java:1486)
+	at knot//net.minecraft.class_757.method_3192(class_757.java:537)
+	at knot//net.minecraft.class_310.method_1523(class_310.java:1393)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:966)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at knot//net.minecraft.class_11246.method_71299(class_11246.java:44)
+	at knot//net.minecraft.class_332.method_71278(class_332.java:143)
+	at knot//net.minecraft.class_437.method_57734(class_437.java:390)
+	at knot//net.minecraft.class_437.method_25420(class_437.java:380)
+	at knot//dev.hardcoremod.client.ElementSelectScreen.method_25394(ElementSelectScreen.java:48)
+	at knot//net.minecraft.class_437.method_47413(class_437.java:119)
+	at knot//net.minecraft.class_757.mixinextras$bridge$method_47413$63(class_757.java)
+	at knot//net.minecraft.class_757.wrapOperation$ban000$fabric-screen-api-v1$onRenderScreen(class_757.java:1486)
+
+-- Screen render details --
+Details:
+	Screen name: dev.hardcoremod.client.ElementSelectScreen
+	Mouse location: Scaled: (361.890811, 97.500000). Absolute: (723.000000, 195.000000)
+	Screen size: Scaled: (463, 265). Absolute: (925, 530). Scale factor of 2
+Stacktrace:
+	at knot//net.minecraft.class_757.method_3192(class_757.java:537)
+	at knot//net.minecraft.class_310.method_1523(class_310.java:1393)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:966)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+-- Uptime --
+Details:
+	JVM uptime: 157.784s
+	Wall uptime: 122.918s
+	High-res time: 116.967s
+	Client ticks: 1554 ticks / 77.700s
+Stacktrace:
+	at knot//net.minecraft.class_310.method_1587(class_310.java:2477)
+	at knot//net.minecraft.class_310.method_54580(class_310.java:1035)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:987)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+-- Affected level --
+Details:
+	All players: 1 total; class_746{name=bomaylala, id=11, pos=(57.5, 73.0, -480.5), mode=SURVIVAL, permission=net.minecraft.class_12096$$Lambda/0x0000000801297108@5ecee66a}
+	Chunk stats: 121, 25
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (64,71,-480), Section: (at 0,7,0 in 4,4,-30; chunk contains blocks 64,-64,-480 to 79,319,-465), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Level time: 0 game time, 0 day time
+	Server brand: fabric
+	Server type: Integrated singleplayer server
+	Tracked entity count: 1
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, e4mc, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, hardcoremod, sodium, file/Cryene 64x.zip, file/§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip, file/BetterHotbar+ Default 1.0.zip
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.7, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 459866384 bytes (438 MiB) / 973078528 bytes (928 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 3250U with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 24 Stepping 1
+	Microarchitecture: Zen / Zen+
+	Frequency (GHz): 2.60
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 2048.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 31.0.21925.1001
+	Memory slot #0 capacity (MiB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 19682.87
+	Virtual memory used (MiB): 13637.32
+	Swap memory total (MiB): 13591.13
+	Swap memory used (MiB): 5514.36
+	Space in storage for jna.tmpdir (MiB): available: 81172.27, total: 428026.00
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 81172.27, total: 428026.00
+	Space in storage for io.netty.native.workdir (MiB): available: 81172.27, total: 428026.00
+	Space in storage for java.io.tmpdir (MiB): available: 81172.27, total: 428026.00
+	Space in storage for workdir (MiB): available: 81172.27, total: 428026.00
+	JVM Flags: 22 total; -Xms925M -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:MaxGCPauseMillis=50 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:+UseStringDeduplication -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -Xmx4096M -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss2M
+	Debug Flags: 0 total; 
+	Fabric Mods: 
+		e4mc: e4mc 6.2.1
+			folk_sisby_kaleido-config: kaleido-config 0.3.3+1.3.2
+		fabric-api: Fabric API 0.141.6+1.21.11
+			fabric-api-base: Fabric API Base 1.0.5+4ebb5c083e
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.114+20dc27073e
+			fabric-biome-api-v1: Fabric Biome API (v1) 17.1.1+4fc5413f3e
+			fabric-block-api-v1: Fabric Block API (v1) 1.1.10+4ebb5c083e
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.39+4ebb5c083e
+			fabric-command-api-v2: Fabric Command API (v2) 2.4.7+6b42a6003e
+			fabric-content-registries-v0: Fabric Content Registries (v0) 10.2.14+4fc5413f3e
+			fabric-convention-tags-v1: Fabric Convention Tags 2.1.55+7f945d5b3e
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.17.3+8ef948ba3e
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.3.23+4ebb5c083e
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.8.48+eed0806f3e
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 23.5.0+88d7da613e
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.28+4fc5413f3e
+			fabric-entity-events-v1: Fabric Entity Events (v1) 3.1.1+1d0ab4303e
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 4.1.1+3b89ecf63e
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 2.0.3+4fc5413f3e
+			fabric-item-api-v1: Fabric Item API (v1) 11.6.0+67f17bb43e
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.2.36+4fc5413f3e
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.1.7+4fc5413f3e
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.15+4ebb5c083e
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.73+3f89f5a53e
+			fabric-loot-api-v3: Fabric Loot API (v3) 2.0.20+78c8b4663e
+			fabric-message-api-v1: Fabric Message API (v1) 6.1.12+4ebb5c083e
+			fabric-model-loading-api-v1: Fabric Model Loading API (v1) 6.0.15+4fc5413f3e
+			fabric-networking-api-v1: Fabric Networking API (v1) 5.1.6+6b6d71a53e
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 21.1.40+4fc5413f3e
+			fabric-particles-v1: Fabric Particles (v1) 4.2.12+4fc5413f3e
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 8.2.4+4ebb5c083e
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 6.2.6+1718722b3e
+			fabric-renderer-api-v1: Fabric Renderer API (v1) 8.0.3+f4ffd2e53e
+			fabric-renderer-indigo: Fabric Renderer - Indigo 5.0.3+f4ffd2e53e
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.43+4ebb5c083e
+			fabric-rendering-v1: Fabric Rendering (v1) 16.2.10+0290ad933e
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 5.0.35+4fc5413f3e
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.3.4+4fc5413f3e
+			fabric-resource-loader-v1: Fabric Resource Loader (v1) 1.0.10+78c8b4663e
+			fabric-screen-api-v1: Fabric Screen API (v1) 3.1.7+4ebb5c083e
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.162+4fc5413f3e
+			fabric-serialization-api-v1: Fabric Serialization API (v1) 1.0.5+4ebb5c083e
+			fabric-sound-api-v1: Fabric Sound API (v1) 1.0.51+4fc5413f3e
+			fabric-tag-api-v1: Fabric Tag API (v1) 1.3.0+88d7da613e
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 6.0.25+4fc5413f3e
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 7.1.0+014c8cec3e
+		fabricloader: Fabric Loader 0.19.3
+			mixinextras: MixinExtras 0.5.4
+		hardcoremod: Hardcore Mod 1.0.0
+		java: OpenJDK 64-Bit Server VM 21
+		minecraft: Minecraft 1.21.11
+		sodium: Sodium 0.8.13+mc1.21.11
+	Launched Version: Fabric 1.21.11
+	Launcher name: java-minecraft-launcher
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: AMD Radeon(TM) Graphics GL version 3.3.0 Core Profile Context 26.5.2.260413, ATI Technologies Inc.
+	Window size: 925x530
+	GFLW Platform: win32
+	Render Extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'fabric'; Server brand changed to 'fabric'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Transparency: regular
+	Render Distance: 2/2 chunks
+	Resource Packs: vanilla, e4mc, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, hardcoremod, sodium, file/Cryene 64x.zip (incompatible), file/§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip, file/BetterHotbar+ Default 1.0.zip
+	Current Language: en_us
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 4x AMD Ryzen 3 3250U with Radeon Graphics 
+	Server Running: true
+	Player Count: 1 / 8; [class_3222['bomaylala'/11, l='ServerLevel[test hardcore mod]', x=57.50, y=73.00, z=-480.50]]
+	Active Data Packs: vanilla, fabric-convention-tags-v2, hardcoremod
+	Available Data Packs: fabric-convention-tags-v2, hardcoremod, minecart_improvements, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -2567897388984221433
+	Suppressed Exceptions: ~~NONE~~

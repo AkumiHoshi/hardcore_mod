@@ -1,0 +1,23 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.hardcoremod.chance_fire"
+  },
+  "effects": {},
+  "exclusive_set": [],
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 8
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 8
+  },
+  "primary_items": "#minecraft:swords",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:swords",
+  "weight": 5
+}

@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.hardcoremod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ChunkAccessor",
+    "ChunkMapAccessor",
+    "CreeperAccessor",
+    "LivingEntityMixin",
+    "MobCategoryMixin",
+    "PlayerMixin",
+    "ServerPlayerMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
